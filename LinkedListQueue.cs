@@ -31,6 +31,17 @@ namespace StacksAndQueues
             this.rear = temp;
             
         }
+        public void Dequeue()
+        {
+            // If queue is empty, return NULL.
+            if (this.front == null)
+                return;
+            QNode temp = this.front;
+            this.front = this.front.next;
+
+            if (this.front == null)
+                this.rear = null;
+        }
         internal void Display()
         {
             QNode temp = this.front;
@@ -47,5 +58,6 @@ namespace StacksAndQueues
                 temp=temp.next;
             }
         }
+        
     }
 }

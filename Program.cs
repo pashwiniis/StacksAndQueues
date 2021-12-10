@@ -26,6 +26,12 @@ namespace DataStructure
             qt.Enqueue(30);
             qt.Enqueue(70);
             qt.Display();
+            qt.Dequeue();
+            qt.Dequeue();
+            qt.Dequeue();
+           
+            qt.Display();
+
 
 
         }
