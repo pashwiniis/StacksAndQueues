@@ -16,6 +16,11 @@ namespace DataStructure
             linkedListStack.Push(30);
             linkedListStack.Push(56);
             linkedListStack.Display();
+            linkedListStack.Peek(); 
+            linkedListStack.Pop();
+            linkedListStack.IsEmpty();
+            linkedListStack.Display();
+            
         }
     }
 }
